@@ -17,20 +17,20 @@ export interface SiteConfig {
 }
 
 export const config: SiteConfig = {
-  title: "Volks-Typo",
-  description: "A blog exploring the intersection of design, typography, and history",
+  title: "StartMicrolearning",
+  description: "Practical resources, templates, and tools for effective microlearning design and development in organizational contexts",
   author: {
-    name: "Your Name",
-    bio: "Writer, designer, and explorer of aesthetic tensions between past and present.",
+    name: "Learning Design Expert",
+    bio: "Helping organizations create effective microlearning experiences that drive real performance outcomes.",
     // avatar: "/images/avatar.jpg" // Uncomment and add your avatar image to public/images/
   },
   social: {
-    github: "https://github.com/yourusername",
-    twitter: "https://twitter.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
-    email: "your.email@example.com"
+    github: "https://github.com/startmicrolearning",
+    twitter: "https://twitter.com/startmicrolearn",
+    linkedin: "https://linkedin.com/company/startmicrolearning",
+    email: "hello@startmicrolearning.com"
   },
-  siteUrl: "https://volks-typo.example.com"
+  siteUrl: "https://startmicrolearning.com"
 };
 
 // Export constants for SEO component

@@ -9,71 +9,68 @@ const sortedPosts = allPosts
   .slice(0, 3);
 ---
 
-<Layout title="Volks-Typo: Bauhaus Meets Monumental Design" description="An Astro blog theme exploring the aesthetic tension between Bauhaus modernism and WW2-era monumental design. Where functionalism meets grandeur in dissonant harmony." showSidebar={false}>
+<Layout title="StartMicrolearning: Effective Microlearning Design & Development" description="Practical resources, templates, and tools for creating effective microlearning experiences in organizational contexts. Master the MICRO framework for better learning outcomes." showSidebar={false}>
   <div class="landing-page">
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">Volks-Typo</h1>
-        <p class="hero-subtitle">Bauhaus Meets Monumental</p>
+        <h1 class="hero-title">StartMicrolearning</h1>
+        <p class="hero-subtitle">Design • Develop • Deploy</p>
         <p class="hero-description">
-          An aesthetic exploration where Bauhaus functionalism collides with 
-          monumental grandeur. Form follows function, with a twist.
+          Master the art and science of microlearning design. Get practical resources, 
+          proven frameworks, and actionable tools to create learning experiences that drive real results.
         </p>
         <hr class="hero-rule" />
         <div class="hero-actions">
-          <a href="#demo" class="btn btn-primary">View Demo</a>
-          <a href="#installation" class="btn btn-secondary">Get Started</a>
+          <a href="#framework" class="btn btn-primary">Explore MICRO Framework</a>
+          <a href="/getting-started" class="btn btn-secondary">Get Started</a>
         </div>
       </div>
     </section>
 
-    <!-- Demo Section -->
-    <section class="demo-section" id="demo">
+    <!-- MICRO Framework Section -->
+    <section class="framework-section" id="framework">
       <div class="container">
-        <h2 class="section-title">Live Demo</h2>
-        <p class="demo-description">
-          See the theme in action with sample blog posts that demonstrate all typography, 
-          layout, and design elements working together in perfect dissonant harmony.
+        <h2 class="section-title">The MICRO Framework</h2>
+        <p class="framework-description">
+          Our proven methodology for designing effective microlearning experiences that 
+          drive measurable performance outcomes in organizational settings.
         </p>
         
-        {sortedPosts.length > 0 && (
-          <div class="demo-posts">
-            {sortedPosts.map(post => (
-              <article class="demo-post-card">
-                <h3 class="demo-post-title">
-                  <a href={post.url}>{post.frontmatter.title}</a>
-                </h3>
-                
-                <div class="demo-post-meta">
-                  <time class="demo-post-date" datetime={post.frontmatter.date}>
-                    {new Date(post.frontmatter.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </time>
-                  <span class="demo-post-reading-time">5 min read</span>
-                </div>
-                
-                {post.frontmatter.excerpt && (
-                  <p class="demo-post-excerpt">{post.frontmatter.excerpt}</p>
-                )}
-                
-                {post.frontmatter.categories && (
-                  <div class="demo-post-categories">
-                    {post.frontmatter.categories.map((category: string) => (
-                      <span class="demo-category">{category}</span>
-                    ))}
-                  </div>
-                )}
-              </article>
-            ))}
+        <div class="micro-framework">
+          <div class="micro-step">
+            <div class="micro-letter">M</div>
+            <h3 class="micro-title">Motivate</h3>
+            <p class="micro-description">Capture learner attention and establish immediate relevance to their needs and goals.</p>
           </div>
-        )}
+          
+          <div class="micro-step">
+            <div class="micro-letter">I</div>
+            <h3 class="micro-title">Interaction</h3>
+            <p class="micro-description">Design engaging activities and active participation opportunities for deeper learning.</p>
+          </div>
+          
+          <div class="micro-step">
+            <div class="micro-letter">C</div>
+            <h3 class="micro-title">Challenge</h3>
+            <p class="micro-description">Provide practice, application, and problem-solving opportunities to build competence.</p>
+          </div>
+          
+          <div class="micro-step">
+            <div class="micro-letter">R</div>
+            <h3 class="micro-title">Retention</h3>
+            <p class="micro-description">Enhance memory, recall, and long-term knowledge reinforcement through proven techniques.</p>
+          </div>
+          
+          <div class="micro-step">
+            <div class="micro-letter">O</div>
+            <h3 class="micro-title">Outcomes</h3>
+            <p class="micro-description">Measure direct impact on learner performance and business results with clear metrics.</p>
+          </div>
+        </div>
         
-        <div class="demo-actions">
-          <a href={`${import.meta.env.BASE_URL}blog`} class="btn btn-primary">View Blog</a>
+        <div class="framework-actions">
+          <a href="/design-framework" class="btn btn-primary">Learn the Framework</a>
         </div>
       </div>
     </section>
@@ -81,90 +78,92 @@ const sortedPosts = allPosts
     <!-- Features Section -->
     <section class="features" id="features">
       <div class="container">
-        <h2 class="section-title">Design Philosophy</h2>
+        <h2 class="section-title">Why StartMicrolearning?</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <h3 class="feature-title">Dissonant Harmony</h3>
-            <p class="feature-description">Bauhaus minimalism meets monumental design. Clean aesthetics with bold, commanding presence.</p>
+            <h3 class="feature-title">Practical Focus</h3>
+            <p class="feature-description">Real-world templates, tools, and techniques tested in organizational environments.</p>
           </div>
           <div class="feature-card">
-            <h3 class="feature-title">Perfect Readability</h3>
-            <p class="feature-description">Optimized typography with ideal line lengths and spacing for maximum comprehension.</p>
+            <h3 class="feature-title">Proven Framework</h3>
+            <p class="feature-description">The MICRO methodology provides a systematic approach to microlearning design.</p>
           </div>
           <div class="feature-card">
-            <h3 class="feature-title">Left Aligned</h3>
-            <p class="feature-description">Natural reading flow with consistent left alignment throughout all content.</p>
+            <h3 class="feature-title">Complete Lifecycle</h3>
+            <p class="feature-description">From initial design through deployment and measurement - we cover it all.</p>
           </div>
           <div class="feature-card">
-            <h3 class="feature-title">Typographic Tension</h3>
-            <p class="feature-description">Cormorant Garamond meets Inter. Classical serif headings contrast modern sans-serif body.</p>
+            <h3 class="feature-title">Organizational Context</h3>
+            <p class="feature-description">Specifically designed for corporate training and workplace learning challenges.</p>
           </div>
           <div class="feature-card">
-            <h3 class="feature-title">Constructivist Grid</h3>
-            <p class="feature-description">8-point grid system creates structural order. Blood-red rules command attention.</p>
+            <h3 class="feature-title">Expert Guidance</h3>
+            <p class="feature-description">Learn from experienced practitioners who understand implementation challenges.</p>
           </div>
           <div class="feature-card">
-            <h3 class="feature-title">Fast Performance</h3>
-            <p class="feature-description">Zero JavaScript, minimal CSS, self-hosted fonts for blazing speed.</p>
+            <h3 class="feature-title">Measurable Results</h3>
+            <p class="feature-description">Focus on outcomes and performance improvement, not just content delivery.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Typography Showcase -->
-    <section class="typography-showcase">
+    <!-- Learning Paths -->
+    <section class="learning-paths">
       <div class="container">
-        <h2 class="section-title">Typography</h2>
-        <p class="typography-description">
-          Work Sans provides exceptional readability across all text sizes and contexts
+        <h2 class="section-title">Learning Paths</h2>
+        <p class="paths-description">
+          Choose your journey based on your role and experience level
         </p>
         
-        <div class="typography-samples">
-          <div class="type-sample">
-            <h1 class="sample-h1">MONUMENTAL TYPE</h1>
-            <p class="type-meta">Cormorant Garamond • 900 Weight • Blood Red</p>
+        <div class="path-cards">
+          <div class="path-card">
+            <h3 class="path-title">New to Microlearning</h3>
+            <p class="path-description">Start with fundamentals and build your understanding of microlearning principles.</p>
+            <a href="/getting-started" class="path-link">Start Here →</a>
           </div>
           
-          <div class="type-sample">
-            <p class="sample-body">Bauhaus-inspired body text in Inter creates perfect readability. Function meets form in every letterform, optimized for modern screens.</p>
-            <p class="type-meta">Inter • 400 Weight • Charcoal Black</p>
+          <div class="path-card">
+            <h3 class="path-title">Ready to Design</h3>
+            <p class="path-description">Learn the MICRO framework and advanced design techniques for effective microlearning.</p>
+            <a href="/design-framework" class="path-link">Design Framework →</a>
           </div>
           
-          <div class="type-sample">
-            <code class="sample-code">npm install volks-typo</code>
-            <p class="type-meta">JetBrains Mono • Monospace Code</p>
+          <div class="path-card">
+            <h3 class="path-title">Implementation Focus</h3>
+            <p class="path-description">Get practical tools and strategies for deploying microlearning in your organization.</p>
+            <a href="/implementation" class="path-link">Implementation →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Installation Section -->
-    <section class="installation" id="installation">
+    <!-- Quick Start Section -->
+    <section class="quick-start" id="quick-start">
       <div class="container">
         <h2 class="section-title">Quick Start</h2>
-        <div class="install-steps">
+        <div class="start-steps">
           <div class="step">
             <h3 class="step-number">01</h3>
             <div class="step-content">
-              <h4 class="step-title">Clone Repository</h4>
-              <pre class="code-block"><code>git clone https://github.com/yourusername/volks-typo.git
-cd volks-typo</code></pre>
+              <h4 class="step-title">Assess Your Needs</h4>
+              <p class="step-description">Identify your learning objectives and organizational context using our assessment tools.</p>
             </div>
           </div>
           
           <div class="step">
             <h3 class="step-number">02</h3>
             <div class="step-content">
-              <h4 class="step-title">Install Dependencies</h4>
-              <pre class="code-block"><code>npm install</code></pre>
+              <h4 class="step-title">Apply MICRO Framework</h4>
+              <p class="step-description">Use our systematic approach to design engaging and effective microlearning experiences.</p>
             </div>
           </div>
           
           <div class="step">
             <h3 class="step-number">03</h3>
             <div class="step-content">
-              <h4 class="step-title">Start Development</h4>
-              <pre class="code-block"><code>npm run dev</code></pre>
+              <h4 class="step-title">Measure & Optimize</h4>
+              <p class="step-description">Track performance outcomes and continuously improve your microlearning initiatives.</p>
             </div>
           </div>
         </div>
@@ -363,13 +362,13 @@ cd volks-typo</code></pre>
     margin: 0;
   }
 
-  /* Typography Showcase */
-  .typography-showcase {
+  /* Learning Paths */
+  .learning-paths {
     padding: calc(var(--grid-unit) * 8) 0;
     background-color: var(--color-surface);
   }
 
-  .typography-description {
+  .paths-description {
     text-align: center;
     font-size: 1.125rem;
     color: var(--color-text-secondary);
@@ -379,77 +378,63 @@ cd volks-typo</code></pre>
     margin-right: auto;
   }
 
-  .typography-samples {
+  .path-cards {
     display: grid;
-    gap: calc(var(--grid-unit) * 6);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--grid-unit) * 4);
   }
 
-  .type-sample {
-    text-align: center;
+  .path-card {
     padding: calc(var(--grid-unit) * 4);
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: 8px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
   }
 
-  .sample-h1 {
-    font-family: var(--font-heading-primary);
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: var(--color-accent);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    line-height: 1.1;
-    margin-bottom: calc(var(--grid-unit) * 2);
+  .path-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
   }
 
-  .sample-h2 {
+  .path-title {
     font-family: var(--font-heading-secondary);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-accent);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    line-height: 1.2;
-    margin-bottom: calc(var(--grid-unit) * 2);
-  }
-
-  .sample-body {
-    font-family: var(--font-body);
-    font-size: 1.125rem;
-    line-height: 1.6;
     color: var(--color-text-primary);
-    margin-bottom: calc(var(--grid-unit) * 2);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .sample-code {
-    font-family: var(--font-mono);
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    padding: calc(var(--grid-unit)) calc(var(--grid-unit) * 1.5);
-    border-radius: 4px;
-    display: inline-block;
-    margin-bottom: calc(var(--grid-unit) * 2);
-    color: var(--color-text-primary);
-  }
-
-  .type-meta {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin: 0;
+    margin-bottom: calc(var(--grid-unit) * 2);
   }
 
-  .demo-section {
+  .path-description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: calc(var(--grid-unit) * 2);
+  }
+
+  .path-link {
+    font-family: var(--font-heading-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: color 0.2s ease;
+  }
+
+  .path-link:hover,
+  .path-link:focus {
+    color: var(--color-text-primary);
+  }
+
+  .framework-section {
     padding: calc(var(--grid-unit) * 8) 0;
   }
 
-  .demo-description {
+  .framework-description {
     text-align: center;
     font-size: 1.125rem;
     line-height: 1.6;
@@ -460,40 +445,60 @@ cd volks-typo</code></pre>
     margin-right: auto;
   }
 
-  .demo-posts {
+  .micro-framework {
     display: grid;
-    gap: calc(var(--grid-unit) * 4);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: calc(var(--grid-unit) * 3);
     margin-bottom: calc(var(--grid-unit) * 6);
   }
 
-  .demo-post-card {
+  .micro-step {
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 8px;
-    padding: calc(var(--grid-unit) * 3);
+    padding: calc(var(--grid-unit) * 4);
+    text-align: center;
     transition: transform 0.2s ease, border-color 0.2s ease;
   }
 
-  .demo-post-card:hover {
+  .micro-step:hover {
     transform: translateY(-2px);
     border-color: var(--color-accent);
   }
 
-  .demo-post-title {
+  .micro-letter {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading-primary);
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0 auto calc(var(--grid-unit) * 2);
+  }
+
+  .micro-title {
     font-family: var(--font-heading-secondary);
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: calc(var(--grid-unit));
-  }
-
-  .demo-post-title a {
     color: var(--color-text-primary);
-    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: calc(var(--grid-unit) * 1.5);
   }
 
-  .demo-post-title a:hover,
-  .demo-post-title a:focus {
-    color: var(--color-accent);
+  .micro-description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .framework-actions {
+    text-align: center;
   }
 
   .demo-post-meta {
@@ -560,12 +565,12 @@ cd volks-typo</code></pre>
     text-align: center;
   }
 
-  .installation {
+  .quick-start {
     padding: calc(var(--grid-unit) * 8) 0;
     background-color: var(--color-surface);
   }
 
-  .install-steps {
+  .start-steps {
     display: grid;
     gap: calc(var(--grid-unit) * 4);
   }
@@ -600,21 +605,12 @@ cd volks-typo</code></pre>
     margin-bottom: calc(var(--grid-unit));
   }
 
-  .code-block {
-    background-color: var(--color-text-primary);
-    color: var(--color-background);
-    padding: calc(var(--grid-unit) * 2);
-    border-radius: 8px;
-    overflow-x: auto;
+  .step-description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
     margin: 0;
   }
 
-  .code-block code {
-    font-family: var(--font-mono);
-    background: none;
-    border: none;
-    color: inherit;
-  }
 
   @media (max-width: 768px) {
     .hero-title {
