@@ -21,7 +21,7 @@ export const config: SiteConfig = {
   description: "Practical resources, templates, and tools for effective microlearning design and development in organizational contexts",
   author: {
     name: "Learning Design Expert",
-    bio: "Helping organizations create effective microlearning experiences that drive real performance outcomes.",
+    bio: "Helping organizations create effective microlearning experiences using the MICRO framework that drive real performance outcomes.",
     // avatar: "/images/avatar.jpg" // Uncomment and add your avatar image to public/images/
   },
   social: {
